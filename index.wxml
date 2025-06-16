@@ -1,0 +1,21 @@
+<!--index.wxml-->
+
+
+<view class="container">
+  <input placeholder="Nom" bindinput="onNomChange" value="{{nom}}" />
+  <input placeholder="Email" bindinput="onEmailChange" value="{{email}}" />
+  <button bindtap="ajouterMembre" wx:if="{{!modeEdition}}">Ajouter Membre</button>
+  <button bindtap="modifierMembre" wx:if="{{modeEdition}}">Modifier Membre</button>
+  <button bindtap="annulerEdition" wx:if="{{modeEdition}}">Annuler</button>
+
+  <view style="margin-top:20px;">
+    <text>Membres :</text>
+    <block wx:for="{{membres}}" wx:key="id">
+      <view class="membre-item">
+        <text>{{item.nom}} - {{item.email}}</text>
+        <button bindtap="editerMembre" data-id="{{item.id}}" size="mini">Modifier</button>
+        <button bindtap="supprimerMembre" data-id="{{item.id}}" size="mini" type="warn">Supprimer</button>
+      </view>
+    </block>
+  </view>
+</view>

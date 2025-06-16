@@ -1,0 +1,39 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  padding: 20rpx;
+}
+
+input {
+  border: 1rpx solid #ccc;
+  border-radius: 10rpx;
+  padding: 16rpx;
+  margin-bottom: 20rpx;
+  width: 100%;
+  font-size: 28rpx;
+}
+
+button {
+  background-color: #07c160;
+  color: white;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  font-size: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+view {
+  margin-bottom: 16rpx;
+  font-size: 28rpx;
+}
+
+text {
+  font-weight: bold;
+  font-size: 32rpx;
+  margin-bottom: 20rpx;
+  display: block;
+}
