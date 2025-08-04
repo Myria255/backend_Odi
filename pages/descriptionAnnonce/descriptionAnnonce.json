@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Navback":"/components/Navback/Navback",
+    "bottomAnnonce":"/components/bottomAnnonce/bottomAnnonce"
+  }
+}

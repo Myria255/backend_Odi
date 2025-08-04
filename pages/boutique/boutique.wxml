@@ -1,0 +1,46 @@
+<!--pages/boutique/boutique.wxml-->
+<!--index.wxml-->
+<navigation></navigation>
+
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="info-boutique1">
+    <view class="description"> vente de telephone </view> 
+    <view class="location">
+       <image src="/assets/location.png" mode=""/>
+       <view class="location-text">abidjan</view>
+    </view>
+  </view>
+  <view class="info-boutique2">
+    <view class="rate">5 etoiles</view>
+      <view bindtap="partager" class="partager">
+        <view>partager</view>
+      </view>
+  </view>
+  <view class="info-boutique3">
+  <view class="recherche">
+    <image src="/assets/search.png" mode="aspectFit"/>
+    <input bindblur="onSearchBlur" bindfocus="onSearchFocus" bindinput="onSearchInput" placeholder="Rechercher un article" class="search"/>
+  </view>
+  
+  <view class="add-article" bind:tap="ajouter">
+    <image src="/assets/mdi_add-bold.png" mode=""/>
+    <view> produit</view>
+  </view>
+</view>
+<scroll-view scroll-y="true" style="height: 100vh;">
+  <view class="articles-container">
+    <block wx:for="{{articles}}" wx:key="id">
+      <view class="article-card">
+        <image src="{{item.image}}" class="article-image"/>
+        <view class="article-title">{{item.title}}</view>
+        <view class="icon-group">
+        <image src="/assets/ep_edit.png" class="icon"/>
+        <image src="/assets/line-md_trash.png" class="icon"/>
+      </view>
+      </view>
+      
+    </block>
+  </view>
+</scroll-view>
+</scroll-view>
+

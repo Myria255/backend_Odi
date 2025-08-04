@@ -1,0 +1,10 @@
+<!--components/navigation/navigation.wxml-->
+<view class="nav">
+  <view class="orange">
+    <image src="/assets/back.png" mode=""bindtap="goBack" />
+  </view>
+  <view> {{title}} </view> 
+  <view class="profil">
+    <image src="/assets/load.png" mode="" />
+  </view>
+</view>

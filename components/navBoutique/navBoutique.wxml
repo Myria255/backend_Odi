@@ -1,0 +1,8 @@
+<!--components/navBoutique/navBoutique.wxml-->
+<view class="conteneur">
+    <image src="/assets/gauche.png" mode="" class="gauche" bindtap="goBack"></image>
+    <view class="contenu">
+    <image src="/assets/Avatar.jpg" mode=""/>
+    <view style="text-align: center; font-size: 18rpx;font-weight: bold;">Ma boutique</view>
+    </view>
+</view>

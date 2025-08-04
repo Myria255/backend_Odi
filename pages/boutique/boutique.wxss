@@ -1,0 +1,145 @@
+/* pages/boutique/boutique.wxss */
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.scrollarea {
+  flex: 1;
+  overflow-y: auto;
+
+}
+.info-boutique1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20rpx;
+    flex-grow: 1;
+    width: auto;
+}
+
+.partager{
+    display: flex;
+    justify-content: space-around;
+    width: 200rpx;
+    background: #FF7900;
+    border-radius: 15rpx;
+    color: white;
+    height:65rpx;
+    font-weight:bold;
+}
+.add-article {
+    background-color: #FF7900;
+    color: white;
+    padding: 16rpx 24rpx;
+    border-radius: 15rpx;
+    font-size: 35rpx;
+    text-align: center;
+    display:flex;
+    flex-direction:row;
+    font-weight:bold;
+  }
+.location{
+    display: flex;
+    justify-content: space-around;
+    width: 150rpx;
+}
+
+.location image{
+    height: 35rpx;
+    width: 35rpx;
+}
+.info-boutique2{
+    display: flex;
+    justify-content: space-between;
+    padding: 20rpx;
+}
+.recherche {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    padding: 10rpx 20rpx;
+    background-color: #f0f0f0;
+    border-radius: 30rpx;
+    margin-right: 20rpx;
+  }
+  
+  .recherche image {
+    width: 36rpx;
+  height: 36rpx;
+  margin-right: 10rpx;
+  }
+  
+  .search {
+    flex: 1;
+    font-size: 28rpx;
+    border: none;
+    background-color: transparent;
+  }
+  .description{
+      font-weight: bold;
+      height: 30px;
+  }
+  .location-text{
+      font-weight: bold;
+  }
+  .info-boutique3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20rpx;
+    background-color: #ffffff;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10rpx;
+  }
+  
+  .article-card {
+    width: 48%; /* Deux colonnes avec un peu d'espace */
+    background-color: #fff;
+    margin-bottom: 20rpx;
+    border-radius: 10rpx;
+    overflow: hidden;
+    box-shadow: 0 2rpx 6rpx rgba(0, 0, 0, 0.1);
+    height: 400rpx;
+  }
+  
+  .article-image {
+    width: 100%;
+    height: 200rpx;
+    
+  }
+  
+  .article-title {
+    padding: 10rpx;
+    font-size: 28rpx;
+    font-weight: bold;
+    flex: 1; 
+  }
+  .article-row {
+    display: flex;
+    align-items: center;
+  }
+  .icon {
+    width: 40rpx;
+    height: 40rpx;
+    margin-left: 10rpx;
+  }
+  .icon-group{
+    text-align: end;
+    margin-top: 30rpx;
+    margin-right: 10rpx;
+  }
+  .add-article image{
+      height: 45rpx;
+      width: 45rpx;
+  }
+  .add-article{
+    font-weight: normal;
+  }

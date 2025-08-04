@@ -1,0 +1,22 @@
+/* components/navBoutique/navBoutique.wxss */
+.conteneur{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50rpx;
+  border-bottom:solid 0.5rpx #FF7900 ;
+}
+.gauche{
+  height: 35rpx;
+  width: 35rpx;
+ padding-top: 60rpx;
+}
+.contenu {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rpx;
+}
+.contenu image{
+  height: 120rpx;
+  width: 120rpx;
+}

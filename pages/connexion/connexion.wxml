@@ -1,0 +1,10 @@
+<!--pages/connexion/connexion.wxml-->
+<view class="conteneur">
+<view class="textBienvenue">Bienvenue sur Max Djassa</view>
+<view class="textDescription">Ici vous aurez la possibilité d'acheter et de ventre en toute sécurité</view>
+<view class="logo">
+    <image src="/assets/Orange.png" mode=""/>
+</view>
+<input type="text" placeholder="Entrer votre nom"/>
+<view class="bouton" bindtap="Enregistrer">Enregistrer</view>
+</view>
