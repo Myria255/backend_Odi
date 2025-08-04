@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "nav-favoris":"/components/nav-favoris/nav-favoris",
+    "navigation-bottom":"/components/navigation-bottom/navigation-bottom"
+  }
+}

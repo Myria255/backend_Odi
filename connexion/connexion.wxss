@@ -1,0 +1,41 @@
+/* pages/connexion/connexion.wxss */
+.conteneur{
+  padding-top: 150rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: auto;
+}
+.textBienvenue{
+  font-weight: bold;
+}
+.textDescription{
+  font-size: 20rpx;
+  text-align: center;
+  width: 450rpx;
+  color: rgb(102, 100, 100);
+}
+.logo{
+  padding-top: 150rpx;
+}
+.logo image{
+border-radius: 15px;
+width:450rpx;
+height: 450rpx;
+}
+input{
+  border-bottom: solid gray 0.5rpx;
+  padding-top: 150rpx;
+  text-align: center;
+}
+.bouton{
+ margin-top: 150rpx;
+  background-color: #FF7900;
+  height: 60rpx;
+  width: 300rpx;
+  text-align: center;
+  padding-top: 6rpx;
+  border-radius: 10rpx;
+  color: white;
+}

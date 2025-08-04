@@ -1,0 +1,44 @@
+/* pages/abonnement/abonnement.wxss */
+.mesbox{
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  margin-top : 30px ;
+  margin-right: 10px ;
+  margin-left: 10px ; 
+}
+
+.box{
+  background: rgb(255, 121, 0) ;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.box2{
+  background: gray ;
+  opacity: 0.5;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.boxAchat{
+  border: solid 1rpx;
+  padding: 20px; 
+  display: flex; 
+  align-items: center; 
+  margin: 10px;
+  border-radius: 10px; 
+}
+
+.boxAchat image{
+  height: 25px;
+  width: 25px;
+}
+
+.name{
+  justify-content: space-between;
+  margin-left: 15px; 
+  flex: 1;
+}

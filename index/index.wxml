@@ -1,0 +1,86 @@
+<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+    <view class="categories">
+        <view class="textCategorie">Nos catégories</view>
+        <view class="direction">
+            <image src="/assets/moinsque.png" mode="widthFix" class="arrow-icon left" bindtap="scrollCategoriesLeft"/>
+            <image src="/assets/plusque.png" mode="widthFix" class="arrow-icon right" bindtap="scrollCategoriesRight"/>
+        </view>
+        <scroll-view scroll-x class="ToutesCategories" scroll-left="{{scrollLeft}}" scroll-with-animation="true">
+            <view
+                wx:for="{{categoriesList}}"
+                wx:key="id"
+                wx:for-item="category"
+                class="typesCategories {{activeCategory === category.id ? 'active' : ''}}"
+                bindtap="selectCategory"
+                data-category-id="{{category.id}}"
+            >
+                {{category.name}}
+            </view>
+        </scroll-view>
+    </view>
+<!-- Pour les images-->
+    <block wx:if="{{imageBands.length > 0}}">
+        <view wx:for="{{imageBands}}" wx:key="bandId" class="image-band-section">
+            <view wx:if="{{item.title}}" class="band-title">{{item.title}}</view>
+
+            <view class="image-list-horizontal">
+                <view wx:for="{{item.images}}" wx:key="id" wx:for-item="imageItem" class="image-item"  data-id="{{imageItem.id}} " bindtap="goToArticleDetail">
+                    <image src="{{imageItem.images[0]}}" mode="aspectFill" class="product-image"></image>
+                    <view class="nomFavoris">
+                        <view class="product-name">{{imageItem.name}}</view>
+                        <image
+                                    src="{{imageItem.liked ? '/assets/like.png' : '/assets/non-like.png'}}"
+                                    class="like-icon"
+                                    mode="aspectFit"
+                                    catchtap="toggleLike" data-id="{{imageItem.id}}"
+                                    data-liked="{{imageItem.liked}}"
+                                />
+                    </view>
+                    <view class="product-info-row">
+                          <view class="product-price">{{imageItem.price}}</view>
+                            <view class="acheterbutton" size="mini" catchtap="buyItem" data-id="{{imageItem.id}}">Acheter</view>                
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+    <block wx:else>
+        <text>Aucun article disponible pour le moment.</text>
+    </block>
+
+    <block wx:if="{{promotionImages.length > 0}}">
+        <view class="promotion-section">
+            <view class="containerPromo">
+                <view class="promotion-title">PROMOTION🥳</view>
+                <view class="Textvoir" bindtap="voirPromotion">voir plus</view>
+            </view>
+            <scroll-view scroll-x class="inner-scroll-view">
+                <view class="image-list-horizontal">
+                    <view wx:for="{{promotionImages}}" wx:key="id" wx:for-item="imageItem" class="image-item" bindtap="goToArticleDetail" data-id="{{imageItem.id}}">
+                        <image src="{{imageItem.images[0]}}" mode="aspectFill" class="product-image"></image>
+
+                        <view class="nomFavoris">
+                        <view class="product-name">{{imageItem.name}}</view>
+                        <image
+                                    src="{{imageItem.liked ? '/assets/like.png' : '/assets/non-like.png'}}"
+                                    class="like-icon"
+                                    mode="aspectFit"
+                                    catchtap="toggleLike" data-id="{{imageItem.id}}"
+                                    data-liked="{{imageItem.liked}}"
+                                />
+                    </view>
+                    <view class="product-info-row">
+                          <view class="product-price">{{imageItem.price}}</view>
+                            <view class="acheterbutton" size="mini" catchtap="buyItem" data-id="{{imageItem.id}}">Acheter</view>                
+                    </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+    </block>
+    <block wx:else>
+        <text>Aucune promotion disponible.</text>
+    </block>
+</scroll-view>
+<navigation-bottom></navigation-bottom>

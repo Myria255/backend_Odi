@@ -1,0 +1,33 @@
+<!--pages/descriptionAnnonce/descriptionAnnonce.wxml-->
+<Navback title="Détail de l'article"></Navback>
+<view class="conteneur">
+  <swiper
+    class="article-images-swiper"
+    indicator-dots="{{true}}"
+    autoplay="{{false}}"
+    interval="5000"
+    duration="500"
+    circular="{{true}}"
+  >
+    <block wx:for="{{articleImages}}" wx:key="*this">
+      <swiper-item class="image-swiper-item">
+        <image src="{{item}}" mode="aspectFit" class="product-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="second">
+    <view class="adresse">
+    <image src="/assets/adresse.png" mode=""/>
+    <text>Abidjan</text>
+    </view>
+    <view class="prix">
+    <text>14000 Fcfa</text>
+    <image src="/assets/non-like.png" mode=""/>
+    </view>
+  </view>
+  <view class="Troisieme">
+    <view class="categorie">Catégorie > Nom de l'article</view>
+    <view class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, reprehenderit illum ipsa nesciunt itaque assumenda ipsam officia praesentium, tenetur corporis illo labore cupiditate dolore iusto ipsum enim voluptate eligendi ex?</view>
+  </view>
+</view>
+<bottomAnnonce></bottomAnnonce>

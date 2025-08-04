@@ -1,0 +1,39 @@
+<!--pages/abonnements/abonnements.wxml-->
+<navigation title="Frean Grace" bind:tap="index"> </navigation>
+
+<!-- Les trois premieres div : Nos Achats , Total Achats, Total Ventes  -->  
+<view class="mesbox">
+  <view class="box">
+    <text>Abonnés</text>
+  </view>
+  <view class="box2">
+    <text>Suivi(e)s</text> 
+  </view>
+  <view class="box2">
+    <text>Ami(e)s</text>
+  </view>
+</view>
+<view style=" border-bottom: solid 1rpx rgba(5, 5, 5); margin: 30px;"></view>
+<view style="margin-left: 30px; font-weight: 800;">10 Abonnés</view>
+
+<!-- Cards contenant les dates et les details de l'achats -->  
+<view class="boxAchat">
+    <image src="/assets/panier.png" mode="" />  
+    <view class="name">
+        <view>Frean Debohi</view>      
+    </view> 
+    <view style="color: red; font-weight:700;">
+       <image src="/assets/dot.png" mode=""/>
+       <image src="/assets/trash.png" mode=""/>
+    </view>
+</view>
+<view class="boxAchat">
+    <image src="/assets/panier.png" mode="" />  
+    <view class="name">
+        <view>Frean Debohi</view>      
+    </view> 
+    <view style="color: red; font-weight:700;">
+       <image src="/assets/dot.png" mode=""/>
+       <image src="/assets/trash.png" mode=""/>
+    </view>
+</view>

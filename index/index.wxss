@@ -1,0 +1,224 @@
+/**index.wxss**/
+
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.scrollarea {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 40rpx;
+}
+
+/* --- Catégories Section --- */
+.categories {
+  margin: 20rpx 0;
+  padding: 0 30rpx;
+  border-radius: 20rpx;
+  padding-bottom: 25rpx;
+}
+
+.textCategorie {
+  font-size: 38rpx;
+  font-weight: 700;
+  color: #FF7900;
+  margin-bottom: 25rpx;
+  text-align: center;
+  padding-left: 10rpx;
+  text-decoration: #FF7900 underline;
+}
+
+.direction {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20rpx;
+  padding-right: 10rpx;
+}
+
+.arrow-icon {
+  width: 10px;
+  height: 10px;
+  padding: 2rpx;
+  opacity: 0.8;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.arrow-icon:active {
+  opacity: 1;
+  transform: scale(0.95);
+}
+
+.ToutesCategories {
+  white-space: nowrap;
+  width: 100%;
+  height: 90rpx; 
+  padding-bottom: 10rpx;
+}
+
+.typesCategories {
+  display: inline-block;
+  padding: 18rpx 35rpx;
+  margin-right: 25rpx;
+  background-color: #ffffff;
+  border-radius: 45rpx;
+  font-size: 28rpx;
+  color: #555;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.typesCategories:last-child {
+  margin-right: 0;
+}
+
+.typesCategories.active {
+  background-color: #FF7900;
+  color: white;
+  box-shadow: 0 6rpx 15rpx rgba(255, 123, 0, 0.4);
+  transform: translateY(-2rpx);
+  font-weight: bold;
+}
+/* Pour la section des images des articles*/
+.promotion-section {
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  padding: 0 30rpx;
+}
+
+.promotion-title {
+  text-decoration: none;
+  font-size: 44rpx;
+  font-weight: 800;
+  color: #333;
+  padding: 15rpx 0;
+  margin-bottom: 25rpx;
+  text-align: left;
+}
+
+.containerPromo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Textvoir {
+  color: #FF7900;
+  text-decoration: #FF7900 underline;
+}
+
+.Textvoir:active {
+  color: #ff77001f;
+}
+.image-band-section {
+  margin-top: 10rpx;
+  padding: 0 30rpx;
+}
+
+.band-title {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20rpx;
+  display: block;
+  text-align: left;
+  padding: 10rpx 0;
+}
+
+.image-list-horizontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-item {
+  width: calc((100vw - 60rpx - 15rpx) / 2);
+  min-width: 330rpx;
+  margin-bottom: 30rpx; 
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  margin-top: 10rpx;
+}
+
+.image-item:nth-child(odd) {
+  margin-right: 15rpx; 
+}
+
+.image-item:nth-child(even) {
+  margin-right: 0; 
+}
+.nomFavoris{
+  display: flex;
+  padding: 25rpx 10rpx 5rpx;
+}
+.product-image {
+  width: 100%;
+  height: 350rpx;
+  object-fit: cover;
+  display: block;
+  border-radius: 15rpx 15rpx 0 0;
+}
+
+.product-name {
+  font-size: 25rpx;
+  font-weight: 600;
+  color: black;
+  white-space: normal;
+  line-height: 1.3;
+  min-height: 78rpx; 
+}
+
+.product-info-row {
+  align-items: center;
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  padding: 0 10rpx 5rpx;
+}
+
+.product-price {
+  font-size: 25rpx;
+  font-weight: bold;
+  color: #000000;
+}
+
+.like-icon {
+  width: 48rpx;
+  height: 48rpx;
+  color: #ff4d4f;
+  padding: 5rpx;
+  transition: transform 0.2s ease-in-out;
+}
+
+.like-icon:active {
+  transform: scale(0.9);
+}
+
+.acheterbutton {
+  height: 40rpx;
+  font-size: 26rpx;
+  padding: 0 30rpx;
+  background-color: #FF7900;
+  color: white;
+  border-radius: 10rpx;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acheterbutton:active {
+  background-color: #cc6000;
+  transform: translateY(1rpx);
+}

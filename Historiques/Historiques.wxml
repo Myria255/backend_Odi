@@ -1,0 +1,48 @@
+<!--pages/Historiques/Historiques.wxml-->
+<!-- Pages Historiques des achats -->  
+<navigation title="Historiques" bind:tap="Historiques"> </navigation>
+<scroll-view class="scrollarea" scroll-y type="list">
+  
+<!-- Les trois premieres div : Nos Achats , Total Achats, Total Ventes  -->  
+<view class="mesbox">
+  <view class="box">
+    <text style="font-weight: bold;">Nos Achats</text>
+    <text>725 000 F</text>
+  </view>
+  <view class="box">
+    <text style="font-weight: bold;">Total Achats</text>
+    <text>500 000 F</text>
+  </view>
+  <view class="box">
+    <text style="font-weight: bold;">Total Ventes</text>
+    <text>225 000 F</text>
+  </view>
+</view>
+
+<!-- Cards contenant les dates et les details de l'achats -->  
+<view style="margin-left: 25rpx; margin-top: 30px;">02/06/2025</view>
+<view class="boxAchat">
+    <image src="/assets/panier1.png" mode="" />  
+    <view class="name">
+        <view>Achat</view>
+        <view>Fourniture stock</view>      
+    </view> 
+    <view style="color: red; font-weight:700;">
+        -1000 FCFA
+    </view>
+</view>
+
+<view style="margin-left: 25rpx; margin-top: 30px;">02/06/2025</view>
+<view class="boxAchat">
+    <image src="/assets/panier1.png" mode="" />  
+    <view class="name">
+        <view>Achat</view>
+        <view>Fourniture stock</view>      
+    </view> 
+    <view style="color: red; font-weight:700;">
+        -1000 FCFA
+    </view>
+</view>
+
+
+</scroll-view>

@@ -1,0 +1,51 @@
+/* pages/Historiques/Historiques.wxss */
+/** index.wxss **/
+
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.mesbox{
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    justify-content : space-between;
+    margin-top : 30px ;
+    margin-right: 10px ;
+    margin-left: 10px ; 
+}
+
+.box{
+    border: solid 0.5rpx #FF7900;
+    padding: 25rpx; 
+    display: flex; 
+    flex-direction:  column; 
+    align-items: center; 
+    border-radius: 10px; 
+    background-color: white;
+    box-shadow: 0 20rpx 20rpx rgba(0, 0, 0, 0.1);
+}
+
+.boxAchat{
+  border: solid 0.5rpx #FF7900;
+    padding: 20px; 
+    display: flex; 
+    align-items: center; 
+    margin: 10px;
+    border-radius: 10px; 
+}
+
+.boxAchat image{
+    height: 35px;
+    width: 35px;
+}
+
+.name{
+    justify-content: space-between;
+    margin-left: 15px; 
+    flex: 1;
+}
+  
+
+

@@ -1,0 +1,84 @@
+/* pages/descriptionAnnonce/descriptionAnnonce.wxss */
+.conteneur{
+  height: 100vh;
+}
+.article-details-container {
+  padding-bottom: 120rpx;
+  box-sizing: border-box;
+}
+.article-images-swiper {
+  border: solid 2rpx #FF7900;
+  border-radius: 20rpx;
+  width: 680rpx;
+  height: 380rpx;
+  margin: 30rpx auto;
+  overflow: hidden;
+}
+.image-swiper-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 80%;
+  object-fit: contain;
+  margin-bottom: 25rpx;
+}
+.second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 650rpx;
+  margin-top: 20rpx;
+  padding: 10rpx 0;
+  margin-left: 48rpx;
+}
+
+.adresse {
+  display: flex;
+  align-items: center;
+  gap: 10rpx;
+  color: #555;
+  font-size: 28rpx;
+}
+
+.adresse image {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.prix {
+  display: flex;
+  align-items: center;
+  gap: 10rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #FF7900;
+}
+
+.prix image {
+  width: 36rpx;
+  height: 36rpx;
+}
+.Troisieme{
+margin-top: 70rpx;
+width: 90%;
+margin-left:35rpx ;
+
+}
+.categorie{
+  text-align: center;
+  font-weight: bold;
+}
+.description{
+  margin-top:35rpx;
+  text-align: justify;
+  font-size: 30rpx;
+color: #555;
+ 
+ 
+}

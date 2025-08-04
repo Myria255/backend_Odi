@@ -1,0 +1,33 @@
+<!--pages/favoris/favoris.wxml-->
+<nav-favoris title="Mes Favoris"></nav-favoris>
+
+<scroll-view scroll-y class="favorite-scroll-view">
+    <block wx:if="{{favoritePhotos.length > 0}}">
+        
+        <view class="favorite-grid">
+                <view wx:for="{{favoritePhotos}}" wx:key="id" class="favorite-item">
+                    <image src="{{item.url}}" mode="aspectFill" class="favorite-image"></image>
+
+                    <view class="item-overlay">
+                        <view class="photo-details">
+                            <view class="product-description">{{item.description}}</view>
+                            <view class="photo-actions">
+                            <image src="/assets/like.png" bindtap="onRemoveFavorite" data-id="{{item.id}}" class="heart-icon-fav"></image>
+                        </view>
+                        </view>
+                        <view class="product-price">{{item.price}}</view>
+                    </view>
+                </view>
+            </view>
+       
+    </block>
+    <block wx:else>
+        <view class="no-favorites-message">
+            <image src="/assets/non-like.png" class="empty-heart-icon"></image>
+            <text>Vous n'avez pas encore de photos favorites.</text>
+            <text>Cliquez sur le cœur sur une photo pour l'ajouter ici !</text>
+        </view>
+    </block>
+  </scroll-view>
+
+<navigation-bottom></navigation-bottom>
