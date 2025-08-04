@@ -1,20 +1,34 @@
 {
   "pages": [
-    
-    "pages/index/index", "pages/chat/chat"
+    "pages/bienvenue/bienvenue",
+    "pages/index/index",
+    "pages/favoris/favoris",
+    "pages/vendre/vendre",
+    "pages/chat/chat",
+    "pages/profil/profil",
+    "pages/promotion/promotion",
+    "pages/descriptionAnnonce/descriptionAnnonce",
+    "pages/connexion/connexion",
+    "pages/boutique/boutique",
+    "pages/Historiques/Historiques",
+    "pages/Support/Support",
+    "pages/abonnements/abonnements",
+    "pages/panier/panier",
+    "pages/achat/achat",
+    "pages/formulaireAjout/formulaireAjout"
+   
     
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
   },
+
   "style": "v2",
   "renderer": "skyline",
   "rendererOptions": {
     "skyline": {
       "defaultDisplayBlock": true,
-      "defaultContentBox": true,
-      "tagNameStyleIsolation": "legacy",
       "disableABTest": true,
       "sdkVersionBegin": "3.0.0",
       "sdkVersionEnd": "15.255.255"
