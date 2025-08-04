@@ -1,0 +1,5 @@
+<!--components/Navback/Navback.wxml-->
+<view class="conteneur">
+    <image src="/assets/back.png" mode="" bind:tap="goBack"/>
+    <view>{{title}}</view>
+</view>

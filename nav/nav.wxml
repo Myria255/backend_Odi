@@ -1,0 +1,25 @@
+<!--components/nav/nav.wxml-->
+<view class="nav">
+    <view class="first">
+        <image src="/assets/logo.png" />
+        <image src="/assets/menu.png" mode=""/>
+    </view>
+    <view class="second">
+        <view class="recherche">
+            <block wx:if="{{showIcons}}">
+                <image src="/assets/recherche.png" mode=""/>
+            </block>
+            <input
+                class="textRecherche"
+                placeholder="Rechercher vos articles"
+                bindinput="onSearchInput"
+                bindfocus="onSearchFocus"
+                bindblur="onSearchBlur"
+            />
+            <block wx:if="{{showIcons}}">
+                <image src="/assets/appareil.png" class="photo" mode="" bindtap="prendrePhoto"/>
+            </block>
+        </view>
+        <image src="/assets/Chariot.png" mode=""/>
+    </view>
+</view>

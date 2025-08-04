@@ -1,0 +1,10 @@
+<!--components/bottomAnnonce/bottomAnnonce.wxml-->
+<view class="conteneur">
+    <view class="acheter">Acheter</view>
+    <view class="faireOffre">Négocier</view>
+    <view class="boutique">
+      <image src="/assets/boutique.png" mode="" bind:tap="Boutique"/>
+    </view>
+    <image src="/assets/chat1.png" mode="" bind:tap="Chat"/>
+    <image src="/assets/panier.png" mode="" bind:tap="Panier"/>
+</view>

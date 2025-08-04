@@ -1,0 +1,23 @@
+<view class="nav-container">
+  
+    <view wx:if="{{!showSearchInput}}" class="nav-title">{{title}}</view>
+    <view wx:else class="search-input-wrapper">
+        <input 
+            class="search-input" 
+            placeholder="Rechercher..." 
+            value="{{searchText}}" 
+            bindinput="onSearchInput" 
+            bindconfirm="onSearchConfirm"
+            focus="{{showSearchInput}}"
+            confirm-type="search"
+        />
+        <image src="/assets/close.png" mode="aspectFit" class="search-clear-icon" bindtap="clearSearch" />
+    </view>
+
+    <image 
+        src="{{showSearchInput ? '/assets/recherche_active.png' : '/assets/recherche.png'}}" 
+        mode="aspectFit" 
+        class="nav-icon search-icon" 
+        bindtap="toggleSearch" 
+    />
+</view>

@@ -1,0 +1,22 @@
+<view class="navigation">
+    <view class="icon" bind:tap="navigateTo" data-page="home">
+        <image src="/assets/home.png" mode=""/>
+        <view class="text">Accueil</view>
+    </view>
+    <view class="icon" bind:tap="navigateTo" data-page="favoris">
+        <image src="/assets/favoris.png" mode=""/>
+        <view class="text">Favoris</view>
+    </view>
+    <view class="icon" bind:tap="navigateTo" data-page="vendre">
+        <image src="/assets/vendre.png" mode=""/>
+        <view class="text">Vendre</view>
+    </view>
+    <view class="icon" bind:tap="navigateTo" data-page="chat">
+        <image src="/assets/Chat.png" mode=""/>
+        <view class="text">Chat</view>
+    </view>
+    <view class="icon" bind:tap="navigateTo" data-page="profil">
+        <image src="/assets/profil.png" mode=""/>
+        <view class="text">Profil</view>
+    </view>
+</view>
