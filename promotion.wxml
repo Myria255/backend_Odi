@@ -1,0 +1,34 @@
+<!--pages/promotion/promotion.wxml-->
+<nav-favoris title="Promotions" bind:searchConfirmed="gererRechercheConfirmee" bind:searchCancelled="gererRechercheAnnulee"></nav-favoris>
+
+<scroll-view scroll-y class="promotion-scroll-view">
+    <block wx:if="{{articlesEnPromotion.length > 0}}">
+       
+            <view class="promotion-grid">
+                <view wx:for="{{articlesEnPromotion}}" wx:key="id" class="promotion-item">
+                    <image src="{{item.imageUrl}}" mode="aspectFill" class="promotion-image"></image>
+
+                    <view class="item-overlay">
+                        <view class="item-details">
+                            <text class="item-description">{{item.description}}</text>
+                            <text class="item-old-price">{{item.ancienPrix}}</text>
+                            <text class="item-new-price">{{item.nouveauPrix}}</text>
+                        </view>
+
+                        <view class="item-actions">
+                            <image src="/assets/add.png" mode="aspectFit" class="add-to-cart-icon" bindtap="ajouterAuPanier" data-id="{{item.id}}"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+       
+    </block>
+    <block wx:else>
+        <view class="no-promotions-message">
+            <image src="/assets/empty.png" class="empty-promotions-icon"></image>
+            <text>Désolé, il n'y a pas de promotions pour le moment.</text>
+            <text>Revenez nous voir bientôt !</text>
+        </view>
+    </block>
+  </scroll-view>
+  <navigation-bottom></navigation-bottom>
