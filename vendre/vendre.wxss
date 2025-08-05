@@ -1,0 +1,78 @@
+/* pages/vendre/vendre.wxss */
+page {
+  background: #ffffff;
+}
+
+.tab-container {
+  display: flex;
+  width: 750rpx;
+  border-bottom: 2rpx solid #f0f0f0;
+}
+
+.tab-item {
+  flex: 1;
+  text-align: center;
+  padding: 20rpx 0;
+}
+
+.tab-text {
+  font-size: 32rpx;
+  color: #333333;
+}
+
+.tab-text.active {
+  color: #FF7900;
+  font-weight: bold;
+}
+
+.tab-underline {
+  width: 170rpx;
+  height: 4rpx;
+  background: #FF7900;
+  margin: 10rpx auto 0;
+}
+
+.content {
+  padding: 20rpx;
+}
+
+.deplacement{
+  width: 750rpx; 
+  height: 80rpx; 
+  left: 0rpx; 
+  top: 0rpx; 
+  display: flex; 
+  box-sizing: border-box; 
+  border-bottom: 2rpx solid #f0f0f0;
+}
+.table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  border-radius:15rpx ;
+}
+
+.table-header, .table-row {
+  display: flex;
+}
+
+.table-header {
+  font-weight: bold;
+  border-radius:15rpx;
+  font-size: 20rpx;
+}
+
+.table-cell {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-radius:15rpx;
+  font-size: 20rpx;
+}
+
+.table-cell:last-child {
+  border-right: none;
+}
+
+.table-cell.header {
+}

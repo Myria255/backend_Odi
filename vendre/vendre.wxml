@@ -1,0 +1,83 @@
+<!--pages/vendre/vendre.wxml-->
+<navboutique></navboutique>
+<scroll-view>
+    
+    <view class="deplacement">
+      <view bindtap="switchTab" data-tab="products" style="flex: 1; text-align: center; padding: 20rpx 0;font-size:35rpx">
+            <text style="{{currentTab === 'products' ? 'color: #FF7900; font-weight: bold; font-size:35rpx' : ''}}">Gestion des produits</text>
+            <view style="{{currentTab === 'products' ? 'width: 350rpx; height: 10rpx; background: #FF7900; margin: 10rpx auto 0;' : 'display: none;'}}"></view>
+        </view>
+
+        <view bindtap="switchTab" data-tab="status" style="flex: 1; text-align: center; padding: 20rpx 0; font-size:35rpx">
+            <text style="{{currentTab === 'status' ? 'color: #FF7900; font-weight: bold;font-size:35rpx' : ''}}">Mes stats</text>
+            <view style="{{currentTab === 'status' ? 'width: 350rpx; height: 10rpx; background: #FF7900; margin: 10rpx auto 0;' : 'display: none;'}}"></view>
+        </view>
+        
+    </view>
+
+    <view style="align-items: center;">
+        <view wx:if="{{currentTab === 'status'}}" style="width: 690rpx; height: 1236rpx; display: block; box-sizing: border-box;padding-left: 64rpx;">
+            
+            <view style="text-align: center;margin-top:50rpx ;font-weight: bold;">Ma boutique</view>
+            <view style="margin-top:50rpx;margin-bottom: 15rpx;">Statistiques</view>
+      <view class="conteneurN" style="display: flex;justify-content: space-between;">
+            <view style=" width: 292rpx; background: #FF7900; height: 180rpx; left: 2rpx; top: 138rpx; display: block; box-sizing: border-box; border-radius: 15rpx; align-items: center; text-align: center;">
+                <view >Nombre total de commandes </view>
+                <view >0</view>
+            </view>
+
+            <view style=" width: 292rpx; background: #FF7900; height: 180rpx; left: 2rpx; top: 138rpx; display: block; box-sizing: border-box; border-radius: 15rpx; align-items: center; text-align: center">
+                <view >Montant total des ventes </view>
+                <view >0</view>
+            </view>
+        </view>
+
+        <view style=" left: 0rpx; margin-top: 60rpx;margin-bottom: 20rpx">Détail</view>
+
+        <view class="table">
+          <view class="table-header">
+            <view class="table-cell header">Commandes</view>
+            <view class="table-cell header">En attente</view>
+            <view class="table-cell header">Livrés</view>
+            <view class="table-cell header">Annulés</view>
+          </view>
+          <view class="table-row">
+            <view class="table-cell">4</view>
+            <view class="table-cell">30</view>
+            <view class="table-cell">1</view>
+            <view class="table-cell">1</view>
+          </view>
+        </view>
+        
+    </view>
+    <view wx:if="{{currentTab === 'products'}}"  >
+
+          <view class="first" style="display: flex; border-radius: 25rpx;border: solid gray; height: 70rpx; align-items: center;justify-content: center;width: 270px;margin:auto; margin-top: 45rpx; ">
+                <image src="/assets/recherche.png" mode="" style="width: 35rpx; height: 35rpx; margin-right: 10rpx;"/>
+                <input type="text" placeholder="Rechercher vos articles"/>
+          </view>
+          <view class="second" style="margin: auto; display: flex;justify-content:center;margin-top:35rpx; width: auto; gap: 5px;">
+             <view class="second1" style="background-color: #FF7900; height: 50rpx; text-align: center; border-radius: 15rpx;width: 140rpx;font-size: 15px; color:white">Tous
+             </view>
+             <view class="second1" style="background-color: #FF7900; height: 50rpx; text-align: center; border-radius: 15rpx;width:165rpx; font-size: 15px; color:white">En attente
+             </view>
+             <view class="second1" style="background-color: #FF7900; height: 50rpx; text-align: center; border-radius: 15rpx; width:145rpx;font-size: 15px;color:white">Livré
+             </view>
+             <view class="second1" style="background-color: #FF7900; height: 50rpx; text-align: center; border-radius: 15rpx; width:165rpx;font-size: 15px; color:white">Annulé
+             </view>
+        </view>
+        <view class="third" style="margin-top: 45rpx;">
+            <view class="third1 " style="display: flex; justify-content:center;border-bottom: solid gray; gap: 25px; align-items: center; margin-top: 10rpx;">
+                <image src="/assets/Barca.svg" mode="" style="width: 60px; height: 60px; "/>
+                <view class="third2">Nom produit</view>
+                <view class="third3" style="text-align: center;">
+                  <view>20000f</view>
+                  <view>En stock</view>
+                </view>
+                <view class="third4" style="text-align: center; background-color: rgba(128, 128, 128, 0.274); width: 150rpx;height: 60rpx; line-height: 30px; border-radius: 10rpx;">modifier</view>
+            </view>
+            
+        </view>
+    </view>
+  </view>
+</scroll-view>
