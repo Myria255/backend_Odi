@@ -1,0 +1,107 @@
+<!--pages/profil/profil.wxml-->
+<view class="header">
+    <image class="back-icon" src="/assets/back.png" bindtap="goBack" />
+</view>
+
+<scroll-view class="scroll-view" scroll-y="true" enhanced="true" show-scrollbar="false">
+    <!-- Conteneur pour le contenu du profil avec fond et bordure arrondie -->
+    <view class="profile-container">
+        <!-- Section de l'image de profil -->
+        <image class="profile-image" src="/assets/man.png" />
+        <text class="profile-name">Lorem Ido</text>
+        
+
+        <!-- Section d'évaluation avec étoiles -->
+        <view class="rating-container">
+            <text class="rating-text">8,2</text>
+            <image class="star-icon" src="/assets/star.png" />
+            <image class="star-icon" src="/assets/star.png" />
+            <image class="star-icon" src="/assets/star.png" />
+            <image class="star-icon" src="/assets/star.png" />
+        </view>
+
+        <!-- Bouton pour modifier le profil -->
+        <view class="edit-profile-btn" bindtap="showEditModal">
+            <text>Modifier Profil</text>
+        </view>
+
+        <!-- Modal pour modifier le profil -->
+        <view class="modal {{showModal ? 'modal-show' : 'modal-hide'}}">
+            <view class="modal-content">
+                <image class="modal-close-icon" src="/assets/close.png" bindtap="hideEditModal" />
+                <view style="align-items: center; justify-content: center; text-align: center;margin-bottom: 10rpx;">
+                    <text class="modal-title">Modifier mon profil</text>
+                </view>
+                <!-- Formulaire de modification -->
+                <view class="form-container">
+                    <!-- Conteneur pour l'image et le bouton -->
+                    <view class="image-button-container">
+                        <image class="modal-profile-image" src="{{profileImage}}" />
+                        <button class="form-button" bindtap="chooseImage">Changer la photo</button>
+                    </view>
+                    <!-- Champ pour le pseudo -->
+                    <view class="form-item">
+                        <text class="form-label">Pseudo</text>
+                        <input class="form-input" type="text" placeholder="Entrez votre nouveau pseudo" value="{{profileName}}" bindinput="updateProfileName" />
+                    </view>
+                    <!-- Bouton Enregistrer -->
+                    <button class="save-btn" bindtap="saveProfile">Enregistrer</button>
+                </view>
+            </view>
+        </view>
+
+        <!-- Section Inventaires avec fond gris -->
+        <text class="section-title">Inventaires</text>
+        <view class="section-container inventory-section">
+            <!-- Vue cliquable pour "Ma boutique" -->
+            <view class="item-row" bindtap="navigateToShop">
+                <image class="item-icon" src="/assets/maboutique.png" />
+                <text class="item-text">Ma boutique</text>
+                <image class="arrow-icon" src="/assets/left.png" />
+            </view>
+            <view class="separator"></view>
+
+            <!-- Vue cliquable pour "Historique ventes & achats" -->
+            <view class="item-row" bindtap="navigateToHistory">
+                <image class="item-icon" src="/assets/ping.png" />
+                <text class="item-text">Historique ventes & achats</text>
+                <image class="arrow-icon" src="/assets/left.png" />
+            </view>
+            <view class="separator"></view>
+
+            <!-- Vue cliquable pour "Service client" -->
+            <view class="item-row" bindtap="navigateToSupport">
+                <image class="item-icon" src="/assets/service-line.png" />
+                <text class="item-text">Service client</text>
+                <image class="arrow-icon" src="/assets/left.png" />
+            </view>
+            <view class="separator"></view>
+
+            <!-- Vue cliquable pour "Mes abonnements" -->
+            <view class="item-row" bindtap="navigateToSubscriptions">
+                <image class="item-icon" src="/assets/users.png" />
+                <text class="item-text">Mes abonnements</text>
+                <image class="arrow-icon" src="/assets/left.png" />
+            </view>
+        </view>
+
+        <!-- Section Préférences avec fond gris -->
+        <text class="section-title">Préférences</text>
+        <view class="section-container preferences-section">
+            <!-- Ligne avec toggle switch pour notifications -->
+            <view class="item-row">
+                <image class="item-icon" src="/assets/notif.png" />
+                <text class="item-text">Notifications push</text>
+                <switch class="toggle-switch" checked="{{notificationsEnabled}}" bindchange="toggleNotifications" />
+            </view>
+            <view class="separator"></view>
+
+            <!-- Vue cliquable pour "Déconnexion" -->
+            <view class="item-row" bindtap="navigateToLogout">
+                <image class="item-icon" src="/assets/logout.png" />
+                <text class="item-text">Déconnexion</text>
+                <image class="arrow-icon" src="/assets/left.png" />
+            </view>
+        </view>
+    </view>
+</scroll-view>
