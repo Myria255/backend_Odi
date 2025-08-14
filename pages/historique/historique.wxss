@@ -1,0 +1,84 @@
+ /* Grille de cards */
+ .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Card individuelle */
+  .action-card {
+    width: 48%;
+    background: #fff;
+    border-radius: 20rpx;
+    padding: 20rpx;
+    margin-bottom: 20rpx;
+    box-shadow: 0 4rpx 8rpx rgba(0.1,0.1,0.1,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-title {
+    font-size: 28rpx;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10rpx;
+  }
+  
+  .card-text {
+    font-size: 24rpx;
+    text-align: center;
+    margin-bottom: 20rpx;
+  }
+
+  .h1{
+    font-weight: bold;
+    color: rgb(255, 135, 23);
+    font-size: 120%;
+  }
+  .listParticipant{
+    padding: 2%;
+    font-weight: bold;
+  }
+
+  .listParticipant1{
+    padding: 2%;
+  }
+  .nom{
+    width: 70%;
+  }
+
+  .montant{
+    width: 30%; 
+    text-align: center;
+  }
+
+  .time{
+      width: 50%;
+  }
+
+  .select-field {
+    width: 90%;
+    padding: 26rpx 24rpx;
+    border-radius: 16rpx;
+    background: #fff;
+    display: flex;
+    align-items: center;
+
+    /*justify-content: space-between;*/
+  }
+  
+  .select-value {
+    font-size: 36rpx;
+    color: #111827;
+  }
+  
+  .select-value.placeholder {
+    color: #111827;
+  }
+  
+  .select-arrow {
+    font-size: 24rpx;
+    color: #6b7280;
+    margin-left: 12rpx;
+  }

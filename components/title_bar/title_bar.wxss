@@ -1,0 +1,23 @@
+.back-icon {
+width: 48rpx;
+height: 48rpx;
+}
+
+.header {
+    font-size: 32rpx;
+    font-weight: bold;
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32rpx;
+}
+
+.notifNombre {
+  padding: 3px;
+  background-color: red;
+  border-radius: 15px;
+  color: aliceblue;
+  margin-bottom: 50px;
+  font-size: small;
+}

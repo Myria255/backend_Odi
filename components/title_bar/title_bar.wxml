@@ -1,0 +1,6 @@
+<view class="header">
+    <image src="../../images/retour.png" class="back-icon" bind:tap="goBack" />
+    <text>{{label}}</text><view>
+    <image  src="{{source_icon}}" class="back-icon" bind:tap="goToNotification"/><text wx:if="{{nombreNotif}}"class="notifNombre">{{nombreNotif}}</text>
+    </view>
+</view>

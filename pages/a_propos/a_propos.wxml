@@ -1,0 +1,54 @@
+ <!-- Barre de navigation -->
+ <nav></nav>
+<view class="page-container">
+ 
+
+  <!-- En-tête héroïque -->
+  <view class="hero-section">
+    <text class="hero-title">Bienvenue sur Ma Tontine</text>
+  </view>
+
+  <!-- Contenu scrollable -->
+  <scroll-view class="scrollarea" scroll-y="true" enhanced="true">
+    <view class="content-container">
+      <!-- Section Introduction -->
+      <view class="section">
+        <text class="section-title">Notre mission</text>
+        <view class="section-content">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        </view>
+      </view>
+
+      <!-- Section Vision -->
+      <view class="section">
+        <text class="section-title">Notre vision</text>
+        <view class="section-content">
+          Duis consectetur pretium consectetur. Nam malesuada ex sit amet facilisis tincidunt. Fusce rhoncus, eros eget pharetra tempor, nibh turpis faucibus libero, id molestie nisi dolor in risus.
+        </view>
+      </view>
+
+      <!-- Section Valeurs -->
+      <view class="section">
+        <text class="section-title">Nos valeurs</text>
+        <view class="section-content">
+          In hac habitasse platea dictumst. Fusce mattis convallis nibh, et vehicula metus venenatis vitae. Nunc accumsan tellus ac enim consectetur, a malesuada sem posuere.
+        </view>
+      </view>
+
+      <!-- Section Contact -->
+      <view class="section contact-section">
+        <text class="section-title">Nous contacter</text>
+        <view class="section-content">
+          <view class="contact-info">
+            <text>Email : contact@notreplateforme.com</text>
+            <text>Téléphone : +225 123 456 789</text>
+            <text>Adresse : Abidjan, Côte d'Ivoire</text>
+          </view>
+          <view class="contact-button" bindtap="goToContact">
+            Envoyer un message
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
