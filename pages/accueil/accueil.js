@@ -4,6 +4,7 @@ Page({
      * Page initial data
      */
     data: {
+        menuOpen : false ,
         tontines: [], // Toutes les tontines brutes
         filteredTontines: [], // Tontines après application du filtre
         users: {},
@@ -15,11 +16,26 @@ Page({
             { label: 'Tout', value: 'all', emptyMessage: 'Créez des tontines sécurisées pour vous et vos proches' },
             { label: 'En cours', value: 'en_cours', emptyMessage: 'Aucune tontine en cours' },
             { label: 'En attente', value: 'en_attente', emptyMessage: 'Aucune tontine en attente' },
-            { label: 'Terminé', value: 'terminé', emptyMessage: 'Aucune tontine terminée' },
+            { label: 'Terminer', value: 'Terminer', emptyMessage: 'Aucune tontine terminée' },
             { label: 'Suspendu', value: 'suspendu', emptyMessage: 'Aucune tontine suspendue' }
         ]
     },
 
+    toggleMenu() {
+        this.setData({
+          menuOpen: !this.data.menuOpen
+        });
+      },
+
+      createAction() {
+        console.log("Créer action cliquée");
+        // ici tu mets ta logique de création
+      },
+      integrateAction() {
+        console.log("Intégrer action cliquée");
+        // ici ta logique d'intégration
+      }
+      ,
     /**
      * Format date to DD/MM/YYYY
      */
