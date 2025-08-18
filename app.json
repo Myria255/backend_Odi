@@ -1,18 +1,17 @@
 {
     "pages": [
+    "pages/info_tour/info_tour",
+    "pages/historique/historique",
+    "pages/a_propos/a_propos",
     "pages/accueil/accueil",
+    "pages/integration_utilisateur/integration_utilisateur",
+    "pages/creation_tontine/creation_tontine",
     "pages/condition_generale/condition_generale",
     "pages/PageGestion/PageGestion",
-    "pages/integration_utilisateur/integration_utilisateur",
     "pages/PageContact/PageContact",
-    "pages/creation_tontine/creation_tontine",
-    "pages/info_tour/info_tour",
     "pages/info_tontine/info_tontine",
-    "pages/profil/profil",
     "pages/assistance/assistance",
     "pages/mes_informations/mes_informations",
-    "pages/a_propos/a_propos",
-    "pages/historique/historique",
     "pages/inscription/inscription",
     "pages/connexion/connexion",
     "pages/notification/notification"

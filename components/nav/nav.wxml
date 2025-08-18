@@ -1,9 +1,11 @@
-<!--components/nav/nav.wxml-->
+<!--components/nav/nav.wxml  
+<image src="../../images/logo-tontine.png" mode="" style=""/> -->
 <view class="nav">
   <view class="orange" bind:tap="historique">
-    <image src="../../images/logo-orange.png" mode=""/>
+    
+    <text style="font-weight: bold; font-size: 7px; ">Ma tontine</text>
   </view>
   <view class="profil" bind:tap="profil">
-    <image src="../../images/profile-user.png" mode=""/>
+    <image src="../../images/logo-tontine.png" mode=""/>
   </view>
 </view>

@@ -16,7 +16,7 @@ page {
   }
   
   .hero-title {
-    font-size: 48rpx;
+    font-size: 40rpx;
     font-weight: bold;
     color: #333;
     margin-bottom: 20rpx;
@@ -42,30 +42,48 @@ page {
   .section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    /* align-items: center; 
+    width: 100%; */
+    margin: 0 10px; 
   }
   
   .section-title {
-    font-size: 36rpx;
-    font-weight: bold;
-    color: #ff8700;
-    margin-bottom: 20rpx;
-    text-align: center;
+    font-size: 35rpx;
+    font-weight: 400;
+    /* color: #ff8700;
+     margin-bottom: 20rpx;
+    text-align: center; */
   }
   
   .section-content {
-    width: 88%;
-    max-width: 700rpx;
+   /* width: 88%; 
+    max-width: 650rpx;
+    border: 1rpx solid #e0e0e0 */
     padding: 20rpx;
     background-color: #fff;
-    border: 1rpx solid #e0e0e0;
     border-radius: 10rpx;
     box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.05);
     font-size: 28rpx;
     line-height: 44rpx;
     color: #444;
     text-align: justify;
+  }
+  .toggle{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-bottom: 1rpx solid gray ; 
+    padding: 10px; 
+    border-radius: 10px;
+  }
+  /* Animation fade-in */
+.animate-fade {
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10rpx); }
+    to { opacity: 1; transform: translateY(0); }
   }
   
   .contact-section .section-content {
@@ -85,7 +103,7 @@ page {
   }
   
   .contact-button {
-    background-color: #ff8700;
+    background-color: #F16E00;
     color: #fff;
     padding: 20rpx 40rpx;
     border-radius: 10rpx;
@@ -96,6 +114,43 @@ page {
     transition: background-color 0.2s ease-in-out;
   }
   
-  .contact-button:hover {
-    background-color: #ff6200;
+
+  .contact-footer {
+    margin-bottom: 70rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2rpx 8rpx rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20rpx;
+    z-index: 999; 
   }
+  
+  .contact-title {
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #F16E00;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    font-size: 28rpx;
+    margin-top: 50rpx; 
+    color: #444;
+  }
+  
+  .contact-button {
+    background-color: #ff8700;
+    color: #fff;
+    padding: 15rpx 40rpx;
+    border-radius: 10rpx;
+    font-size: 28rpx;
+    font-weight: bold;
+  }
+  

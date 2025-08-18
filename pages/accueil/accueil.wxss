@@ -1,3 +1,12 @@
+.bouton{
+    flex: 0 0 200rpx; 
+    padding: 10rpx; 
+    margin-right: 15rpx; 
+    border-radius: 25rpx; 
+    font-size: 28rpx; 
+    text-align: center;
+    
+}
 .floating-container {
     position: fixed;
     bottom: 50rpx;
@@ -74,5 +83,27 @@
     height: 100%;
     background-color: rgba(0,0,0,0.4); /* gris transparent */
     z-index: 998; /* sous le bouton flottant */
+  }
+  .styleTontine {
+    margin-bottom: 20rpx; 
+    height: 200rpx; 
+    display: flex; 
+    align-items: center; 
+    background-color: #ffff;
+    border-bottom: 1.5px solid #F16E00; 
+    border-radius: 15rpx; 
+    padding: 20rpx; 
+    box-sizing: border-box; 
+    margin: 10px;
+  }
+  .styleBoutonDef {
+    padding: 20rpx; 
+    width: 750rpx; 
+    box-sizing: border-box; 
+    overflow-x: auto; 
+    height: 120rpx; 
+    display: block; 
+    justify-content: center;
+    align-items: center;
   }
   

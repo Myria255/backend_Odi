@@ -7,11 +7,11 @@
         <view class="bouton" bindtap="openModal">Intégrer</view>
         <view class="description">Description</view>  
         <view class="description_text {{isExpanded ? 'expanded' : 'collapsed'}}">
-            <text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo adipisci consectetur aperiam natus consequuntur. Dolorem deserunt dicta impedit quia sapiente quos minus laborum, sint quisquam eligendi cum, vero, atque voluptate!</text>
-            <text>Lorem ipsum dolor sit amet consectetur adipisicing elit.</text>
-            <text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quae reprehenderit ipsum minus a sed quidem, nisi maiores suscipit enim quasi impedit delectus sunt possimus! Quibusdam quod enim voluptatem at?</text>
-            <text>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae enim a rerum vero suscipit fugiat sit veritatis, blanditiis neque, deleniti, quasi facere ipsum omnis illo necessitatibus labore asperiores reiciendis veniam.</text>
-            <text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia blanditiis repellat perferendis vel quas illum distinctio rem, fuga non voluptates reprehenderit asperiores ex obcaecati sit unde in exercitationem autem maiores.</text>
+            <text>Ma Tontine est une application mobile qui permet de créer, gérer et suivre facilement des tontines numériques. Elle offre aux utilisateurs la possibilité de participer à des tontines avec ou sans assurance, d’automatiser le suivi des cotisations et des paiements, et de recevoir des notifications pour ne jamais manquer un versement.
+            
+                Pour les tontines avec assurance, l’application gère le paiement des garanties et assure la sécurité des fonds. Les tontines sans assurance appliquent automatiquement des frais de 2,5 % sur chaque cotisation. Chaque participant reste responsable de ses paiements, et toute tentative de fraude est suivie légalement.
+            
+                Grâce à Ma Tontine, la gestion de l’épargne collective devient simple, sécurisée et transparente, directement depuis votre smartphone via Orange Money. </text>
         </view>
         <view class="voir_plus" bindtap="toggleText" style="position: relative; top: 30rpx; left: 0;">
             {{isExpanded ? 'Voir moins' : 'Voir plus...'}}

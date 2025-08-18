@@ -1,9 +1,9 @@
 <view style="height: 100vh; display: flex; flex-direction: column; font-family: 'Times New Roman', Times, serif;">
     <nav></nav>
     <!-- Section des filtres avec défilement horizontal -->
-    <scroll-view scroll-x="true" show-scrollbar="false" style="padding: 20rpx; width: 750rpx; box-sizing: border-box; overflow-x: auto; height: 120rpx; display: block; justify-content: center;align-items: center;">
+    <scroll-view scroll-x="true" show-scrollbar="false" class="styleBoutonDef">
         <view style="display: flex; flex-direction: row;">
-            <view wx:for="{{filters}}" wx:key="value" style="flex: 0 0 200rpx; padding: 20rpx 20rpx; margin-right: 15rpx; border-radius: 15rpx; font-size: 28rpx; color: {{currentFilter === item.value ? 'white' : 'black'}}; background-color: {{currentFilter === item.value ? '#F16E00' : '#d3d3d3'}}; text-align: center;" bind:tap="filterTontines" data-filter="{{item.value}}">
+            <view wx:for="{{filters}}" wx:key="value" class="bouton" style="color: {{currentFilter === item.value ? 'white' : 'black'}}; background-color: {{currentFilter === item.value ? '#F16E00' : '#d3d3d3'}};" bind:tap="filterTontines" data-filter="{{item.value}}">
                 {{item.label}}
             </view>
         </view>
@@ -11,7 +11,7 @@
       <!-- width: 750rpx; height: 1350rpx;  --> 
     <scroll-view scroll-y="true" style="overflow-y: auto; display: block; box-sizing: border-box">
         <!-- width: 750rpx; -->
-        <view wx:for="{{filteredTontines}}" wx:key="id_tontine" style="margin-bottom: 20rpx; height: 200rpx; display: flex; align-items: center; background-color: #ffff; border-top: 1.5px solid #F16E00; border-radius: 15rpx; padding: 20rpx; box-sizing: border-box; margin: 10px;" bindtap="NavPageGestion" data-tontine="{{item}}">
+        <view wx:for="{{filteredTontines}}" wx:key="id_tontine" class="styleTontine" bindtap="NavPageGestion" data-tontine="{{item}}">
         
             <!-- Image à gauche -->
             <image src="/images/contribution_remoove.png" style="width: 100rpx; height: 100rpx; border-radius: 15rpx; object-fit: cover;" />

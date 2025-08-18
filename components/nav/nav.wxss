@@ -9,8 +9,8 @@
     padding: 3%;
   }
   .orange image{
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     margin-right: 150%;
   }
   .profil image{

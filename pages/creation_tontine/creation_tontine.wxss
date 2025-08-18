@@ -70,6 +70,7 @@ page {
 .condition-paragraph {
     display: block;
     margin-bottom: 24rpx;
+    text-align: justify;
 }
 
 .condition-paragraph:last-child {

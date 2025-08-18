@@ -23,18 +23,22 @@
         <view class="condition-section">
             <view class="condition-card">
                 <view class="condition-text {{expanded ? 'expanded' : 'collapsed'}}">
+                  
                     <text class="condition-paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus mollitia culpa laboriosam delectus eum labore libero sequi impedit ducimus deleniti, harum iure blanditiis exercitationem magni omnis porro nihil! Eveniet, deleniti!
-                    </text>
-                    <text class="condition-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, aperiam aut maiores, dolor suscipit ratione rerum autem obcaecati <!-- nam tempora molestias, nisi debitis provident veniam pariatur ad ab quod! Officiis.
-                        Lorem ipsum dolor sit amet consectetur -->adipisicing elit. Aperiam magnam veritatis</text> 
-                    <text class="condition-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid laborum totam minima officiis maxime. Nostrum, laborum quasi quos assumenda doloribus inventore ullam, nesciunt dolores distinctio, provident ipsa facere sunt nulla.
-                    </text>
-                    <text class="condition-paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime temporibus praesentium ab corporis ratione dolore, explicabo illo nobis veniam placeat voluptate itaque error facilis cupiditate exercitationem perferendis. Incidunt, commodi animi.
-                    </text>
+                        L’adhésion à une tontine via notre plateforme implique l’acceptation pleine et entière des règles définies pour son bon fonctionnement. Chaque utilisateur doit disposer d’un compte Orange Money valide et actif afin de pouvoir effectuer ses cotisations et recevoir ses gains. Les participants sont seuls responsables du respect de leurs engagements financiers. Tout retard ou défaut de paiement entraîne automatiquement l’application de pénalités prévues dans le règlement de la tontine, pouvant aller jusqu’à l’exclusion du membre en cas de récidive.
+                        
+                        Pour les tontines intégrant une formule d’assurance, chaque cotisation s’accompagne d’une garantie obligatoire. Toute tentative de fraude, abus ou manipulation visant à détourner ce mécanisme d’assurance sera immédiatement sanctionnée et pourra faire l’objet de poursuites légales conformément à la réglementation en vigueur.
+                        
+                        Pour les tontines sans assurance, des frais de service équivalents à 2,5 % sont appliqués sur chaque cotisation afin de couvrir les coûts liés à la gestion et à la sécurité des transactions. Ces frais sont prélevés de manière automatique et ne sont en aucun cas remboursables.
+                        
+                        Les fonds collectés sont redistribués exclusivement aux membres respectant leurs obligations. Les bénéfices, primes ou avantages liés à la tontine ne peuvent être réclamés par un participant en défaut de paiement. Chaque membre doit s’assurer que son compte dispose du solde suffisant au moment du prélèvement afin d’éviter tout incident.
+                        
+                        L’application ne stocke aucune donnée bancaire sensible. Seules les informations strictement nécessaires à l’identification et au suivi des transactions sont conservées, dans le respect des normes de confidentialité et de protection des données en vigueur.
+                        
+                        En cas de litige entre participants, la plateforme n’assume aucune responsabilité quant aux désaccords personnels. Toutefois, elle se réserve le droit d’intervenir, de suspendre ou de bannir un utilisateur en cas de non-respect des règles ou de comportement frauduleux portant atteinte à la communauté.
+                        
+                        Enfin, la plateforme se réserve le droit de modifier ou d’adapter ses conditions générales à tout moment afin d’assurer un service fiable, sécurisé et conforme aux exigences légales. Tout utilisateur est invité à consulter régulièrement ces règles pour rester informé des mises à jour.
+                        </text>
                 </view>
 
                 <view class="expand-button" bindtap="toggleExpanded">

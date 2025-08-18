@@ -8,3 +8,7 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+pages{
+    font-family: 'Times New Roman', Times, serif;
+}
