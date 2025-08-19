@@ -17,7 +17,7 @@ Page({
                 avatar: '../../images/avatar.jpg',
                 nom: 'Odi Mariano',
                 note: '⭐⭐⭐⭐⭐',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptatibus! Ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                description: 'Enfin une application simple et efficace pour gérer notre tontine ! Tout est transparent, je vois directement qui a cotisé et quand. On reçoit même des rappels automatiques pour ne rien oublier. Ça nous évite les disputes et rend l’épargne beaucoup plus facile !',
                 expanded: false,
                 showButton: true
             },
@@ -26,7 +26,7 @@ Page({
                 avatar: '../../images/avatar.jpg',
                 nom: 'Marie Dubois',
                 note: '⭐⭐⭐⭐',
-                description: 'Excellent service, très satisfaite de mon achat. Je recommande vivement cette application à tous mes amis et ma famille. L\'expérience utilisateur est fantastique et l\'équipe support est très réactive.',
+                description: 'Franchement je recommande ! Avant on utilisait juste un cahier, maintenant tout est digitalisé. Les paiements sont sécurisés et rapides, et je peux suivre ma progression en temps réel. L’application nous fait gagner du temps et donne confiance à tous les membres.',
                 expanded: false,
                 showButton: true
             },
@@ -35,7 +35,7 @@ Page({
                 avatar: '../../images/avatar.jpg',
                 nom: 'Jean Martin',
                 note: '⭐⭐⭐⭐⭐',
-                description: 'Parfait !',
+                description: "J’adore cette application ! Elle nous permet de gérer plusieurs tontines en même temps, même à distance. Je peux participer avec mes amis qui ne vivent pas dans la même ville, et tout est bien organisé. C’est moderne, pratique et rassurant.",
                 expanded: false,
                 showButton: false
             }

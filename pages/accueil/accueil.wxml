@@ -18,10 +18,10 @@
         
             <!-- Texte à droite -->
             <view style="flex: 1; margin-left: 30rpx; display: flex; flex-direction: column; justify-content: space-between; height: 150rpx;">
-                <text style="font-size: 28rpx; font-weight: bold;"> {{ item.nom_tontine }}</text>
-                <text style="font-size: 24rpx;">Nombre de participants : {{ item.nombre_participants }}</text>
-                <text style="font-size: 24rpx;">Créée le : {{ item.date_creation }}</text>
-                <text style="font-size: 24rpx; color: {{ item.statut_tontine !== 'en_attente' ? 'green' : 'red'}} ;"> {{ item.statut_tontine }}</text>
+                <text style="font-size: 33rpx; font-weight: bold;"> {{ item.nom_tontine }}</text>
+                <text style="font-size: 27rpx;">Nombre de participants : {{ item.nombre_participants }}</text>
+                <text style="font-size: 27rpx;">Créée le : {{ item.date_creation }}</text>
+                <text style="font-size: 27rpx; color: {{ item.statut_tontine !== 'en_attente' && item.statut_tontine !== 'en cours' ? 'red' : 'green'}} ;"> {{ item.statut_tontine }}</text>
             </view>
         </view>
         <!-- Donner une couleur en fonction de l'etat : a faire -->

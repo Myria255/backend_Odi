@@ -1,15 +1,15 @@
 {
     "pages": [
+    "pages/accueil/accueil",
+    "pages/info_tontine/info_tontine",
     "pages/info_tour/info_tour",
     "pages/historique/historique",
     "pages/a_propos/a_propos",
-    "pages/accueil/accueil",
     "pages/integration_utilisateur/integration_utilisateur",
     "pages/creation_tontine/creation_tontine",
     "pages/condition_generale/condition_generale",
     "pages/PageGestion/PageGestion",
     "pages/PageContact/PageContact",
-    "pages/info_tontine/info_tontine",
     "pages/assistance/assistance",
     "pages/mes_informations/mes_informations",
     "pages/inscription/inscription",

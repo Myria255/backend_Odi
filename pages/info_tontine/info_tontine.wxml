@@ -3,28 +3,29 @@
 
 <view class="conteneur">
     <block wx:for="{{result}}" wx:key="id">
-        <view style="position: relative; top: 18rpx; text-align: center; font-weight: bolder; ">{{item.nom_tontine}}</view>
+        <view style="position: relative; top: 18rpx; text-align: center; font-weight: bolder;">{{item.nom_tontine}}</view>
     </block>
 </view>
 
 <!-- Informations -->
-<view style="width: 750rpx; height: 260rpx; display: block; box-sizing: border-box" class="conteneur">
-    <block wx:for="{{result}}" wx:key="id">
+<view>
+    <block wx:if="{{result}}" wx:key="id">
+        <view class="card">
+            <view class="card-header">
+                <view class="card-title">Nombre de participants : </view>
+                <view class="">
+                    {{item.nombre_participants}}
+                </view>
+            </view>
 
-        <view style="position: relative; width: 345rpx; background: #fff; height: 240rpx; display: block; box-sizing: border-box; left: 12rpx; box-shadow: 0 3rpx 8rpx rgba(255,121,0,1); border-radius: 18rpx;">
-            <view style="position: relative; left: 17rpx; top: 26rpx; font-size: 35rpx; font-weight: bold; margin-bottom: 1vh;">Nombre de participant.e.s</view>
-            <view style="position: relative; width: 95rpx; background: #ED6C30; height: 95rpx; left: 222rpx; top: 25rpx; display: block; box-sizing: border-box; border-radius: 99rpx; margin-left: -6vh; align-items: center;text-align: center;"> <text style="position: relative; top: -10rpx; font-size: 30rpx; font-weight: bolder; color: #FFFFFFFF;">
-                    {{item.nombre_participants}}</text></view>
-        </view>
-
-        <view style="position: relative; left: 395rpx; top: -15vh;width: 345rpx; background: #fff; height: 240rpx;display: block; box-sizing: border-box;box-shadow: 0 3rpx 8rpx rgba(255,121,0,1); border-radius: 18rpx;">
-            <view style="position: relative; left: 17rpx; top: 26rpx; font-size: 35rpx; font-weight: bold;">Montant de la cagnotte</view>
-            <view style="position: relative; left: 1rpx; top: 37%; text-align: center; padding-right: 5px; font-weight: bold;">
+            <view>
+                <view class="card-body">Montant de la cagnotte</view>
                 {{item.montant_total}} Fcfa
             </view>
         </view>
     </block>
 </view>
+
 
 <!-- Participants -->
 <view style="width: 707rpx; height: 384rpx; margin-left: 18rpx; display: block; box-sizing: border-box" class="conteneur contour">

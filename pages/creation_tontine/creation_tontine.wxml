@@ -14,7 +14,7 @@
                     <image src="../../images/slide2.jpg" class="slide-image" mode="aspectFill" />
                 </swiper-item>
                 <swiper-item>
-                    <image src="../../images/slide3.jpeg" class="slide-image" mode="aspectFill" />
+                    <image src="../../images/slide1.jpg" class="slide-image" mode="aspectFill" />
                 </swiper-item>
             </swiper>
         </view>

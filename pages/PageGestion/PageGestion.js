@@ -301,6 +301,7 @@ Page({
                 id_tour: id_tour,
                 id_participant: id_participant,
                 telephone: contact,
+                mode_paiement : "mobile money"
             },
             success: (res) => {
                 console.log(res);

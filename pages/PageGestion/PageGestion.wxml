@@ -31,7 +31,7 @@
                 </view>
             </block>
             <view style="position: absolute; right: 20rpx; bottom: 20rpx; display: flex; align-items: center;">
-                <text bindtap="goToTour" style="color: #FF7900; font-size: 28rpx; font-weight: 500;">voir détails...</text>
+                <view bindtap="goToTour" style="color: #FF7900; font-size: 28rpx; font-weight: 500; ">voir détails...</view>
                 <!--   <image src="../../images/right-arrow.png" style="width: 24rpx; height: 24rpx; margin-left: 10rpx; margin-top: 10rpx;" />-->
             </view>
         </view>
@@ -49,43 +49,39 @@
                 <block data-tontine="{{item}}">
                     <text class="card-title">Inviter des membres</text>
                     <text class="card-text">Ajouter des proches à rejoindre votre tontine</text>
-                    <image src="../../images/add-membre.png" class="card-image" />
+                    <image src="../../images/add-membre.svg" class="card-image" />
                 </block>
             </view>
 
             <view class="action-card" bindtap="openModalConsultation" style="width: 330rpx; height: 324rpx; display: flex; box-sizing: border-box">
                 <text class="card-title">Consulter les règles
                     et modalités</text>
-                <text class="card-text">Voir nos règles et
+                <text class="card-text">Voir vos règles et
                     modalités de gestion</text>
-                <image src="../../images/modlite.png" class="card-image" />
+                <image src="../../images/modlite.svg" class="card-image" />
             </view>
 
             <view class="action-card" bindtap="lancerPaiement" style="width: 330rpx; height: 324rpx; display: flex; box-sizing: border-box">
-                <text class="card-title">Payer sa
-                    cotisation</text>
+                <text class="card-title">Payer sa cotisation</text>
                 <text class="card-text">Regler vos cotisations ,
                     payer facilement </text>
-                <image src="../../images/contribution.png" class="card-image" />
+                <image src="../../images/contribution.svg" class="card-image" />
             </view>
 
             <view class="action-card" bindtap="goToInfoTontine" style="width: 330rpx; height: 324rpx; display: flex; box-sizing: border-box">
                 <block data-tontine="{{item}}">
-                    <text class="card-title">Ordre de
+                    <text class="card-title">Informations sur la tontine</text>
+                    <text class="card-text">Consulter l'ordre de
                         recupération</text>
-                    <text class="card-text">Informations
-                        sur les gains, ordre
-                        de recupération </text>
-                    <image src="../../images/cagnotte.png" class="card-image" />
+                    <image src="../../images/cagnotte.svg" class="card-image" />
                 </block>
             </view>
 
             <!--<view class="action-card" bindtap="openModalHistorique" style="width: 330rpx; height: 324rpx; display: flex; box-sizing: border-box">-->
             <view class="action-card" bindtap="goToHistorique" style="width: 330rpx; height: 324rpx; display: flex; box-sizing: border-box">
-                <text class="card-title">Historique</text>
-                <text class="card-text">Ajouter des proches a
-                    rejoindre votre tontine</text>
-                <image src="../../images/Historique.png" class="card-image" />
+                <text class="card-title">Historiques</text>
+                <text class="card-text">Consulter les historiques des tours précédents</text>
+                <image src="../../images/historique.svg" class="card-image" />
             </view>
         </view>
     </scroll-view>
