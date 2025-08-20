@@ -1,5 +1,7 @@
 /* pages/tour/tour.wxss */
-
+pages{
+    font-family: 'Times New Roman', Times, serif;
+}
 .overlay {
     position: fixed;
     top: 0;

@@ -1,6 +1,6 @@
 
  /* Grille de cards */
-pages{
+page{
     font-family: 'Times New Roman', Times, serif;
 }
  .card-grid {

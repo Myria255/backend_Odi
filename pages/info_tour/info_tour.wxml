@@ -64,9 +64,9 @@
     </block> -->
 </view>
 
-<view class="conteneur contour">
+<view class="conteneur">
   <block wx:if="{{result && result.length !== 0 }}">
-    <text class="title">Participants</text>
+    <text class="title">Participants à jour</text>
 
     <scroll-view scroll-y class="scrollarea">
       <block wx:for="{{result}}" wx:key="id">

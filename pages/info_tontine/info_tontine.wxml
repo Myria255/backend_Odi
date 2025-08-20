@@ -3,24 +3,22 @@
 
 <view class="conteneur">
     <block wx:for="{{result}}" wx:key="id">
-        <view style="position: relative; top: 18rpx; text-align: center; font-weight: bolder;">{{item.nom_tontine}}</view>
+        <view style="position: relative; top: 15rpx; text-align: center; margin-bottom: 20rpx; font-weight: bolder;">{{item.nom_tontine}}</view>
     </block>
 </view>
 
 <!-- Informations -->
 <view>
-    <block wx:if="{{result}}" wx:key="id">
+    <block wx:for="{{result}}" wx:key="id">
         <view class="card">
             <view class="card-header">
-                <view class="card-title">Nombre de participants : </view>
-                <view class="">
+                <view class="card-title">Nombre de participants : {{item.nombre_participants}} </view>
+               <!-- <view class="">
                     {{item.nombre_participants}}
-                </view>
+                </view> -->
             </view>
-
             <view>
-                <view class="card-body">Montant de la cagnotte</view>
-                {{item.montant_total}} Fcfa
+                <view class="card-body">Montant de la cagnotte {{item.montant_total}} Fcfa </view>
             </view>
         </view>
     </block>
@@ -28,16 +26,18 @@
 
 
 <!-- Participants -->
-<view style="width: 707rpx; height: 384rpx; margin-left: 18rpx; display: block; box-sizing: border-box" class="conteneur contour">
+<view class="conteneur">
     <block wx:for="{{result}}" wx:key="id">
-        <text style="position: relative; left: 22rpx; top: 0rpx" class="h1">Participants</text>
-        <scroll-view scroll-y="true" class="scrollarea" style="width: 710rpx; height: 320rpx; display: block; box-sizing: border-box; background-color: #d9d9d960; border-radius: 18rpx;">
-            <view style="position: relative; width: 710rpx; height: auto; left: 0rpx; top: 23rpx; display: block; box-sizing: border-box">
+        <text class="title">Participants à jour</text>
+        <scroll-view scroll-y class="scrollarea">
+            <view>
                 <view data-index="{{index}}">
                     <block wx:for="{{participantList}}" wx:for-item="participant" wx:for-index="participantIndex" wx:key="id_participant">
-                        <view class="listParticipant" style="width: 710rpx; height: 63rpx; display: flex; align-items: center; box-sizing: border-box; border-bottom: 1rpx solid #d9d9d9;">
-                            <view class="index-number" style="width: 50rpx; font-size: 28rpx; color: #333; margin-right: 20rpx;">{{participantIndex + 1}}.</view>
-                            <view class="nom">{{participant.utilisateur.nom}} {{participant.utilisateur.prenoms}}</view>
+                        <view class="listParticipant">
+                            <view class="left">
+                                <view class="index-number">{{participantIndex + 1}}.</view>
+                                <view class="nom">{{participant.utilisateur.nom}} {{participant.utilisateur.prenoms}}</view>
+                            </view>
                             <view class="montant">{{item.montant_a_cotise}}</view>
                         </view>
                     </block>
@@ -47,23 +47,23 @@
     </block>
 </view>
 
-
-
-
-<view wx:if="{{isAdmin}}" style="position: relative; width: 328rpx; height: 80rpx; left: 400rpx; top: 18rpx; display: flex; justify-content: center; align-items: center; box-sizing: border-box; background: rgb(255, 135, 23); color: #fff; border-radius: 18rpx;" bind:tap="openModal">
-    <text>Modifier l'ordre</text>
+<view style="display: flex; justify-content: flex-end; padding: 20rpx;">
+    <view wx:if="{{isAdmin}}" style="width: 250rpx; height: 80rpx;display: flex; justify-content: center; align-items: center;box-sizing: border-box; background: #F16E00; color:#fff; border-radius: 10px;" bind:tap="openModal">
+        Modifier l'ordre
+    </view>
 </view>
+
 <!-- Pénalités -->
-<view style="width: 750rpx; height: 306rpx; display: block; box-sizing: border-box" class="conteneur">
-    <text style="position: relative; left: 22rpx; top: 0rpx" class="h1">Pénalités</text>
-    <Scroll-view scroll-y="true" class="scrollarea" style="width: 750rpx; height: 295rpx; display: block; box-sizing: border-box">
-        <view style="position: relative; width: 750rpx; background: white; height: 88rpx; left: 0rpx; top: 23rpx; display: block; box-sizing: border-box">
+<view class="conteneur">
+    <Scroll-view scroll-y="true" class="scrollarea">
+        <view>
             <block wx:for="{{result}}" wx:key="id">
                 <view data-index="{{index}}">
                     <!-- <block wx:for="{{item.participant}}" wx:for-item="participant" wx:key="participant.id_participant"> -->
                     <block wx:for="{{item.participant}}" wx:for-item="participant" wx:key="id_participant">
                         <block wx:if="{{participant.penalite && participant.penalite.length>0}}">
                             <block wx:for="{{participant.penalite}}" wx:for-item="penalite" wx:key="id_penalite">
+                                <text class="title">Pénalités</text>
                                 <view class="listParticipant" style="width: 736rpx; height: 64rpx; display: flex; box-sizing: border-box">
                                     <view class="nom">
                                         {{participant.utilisateur.nom}} {{participant.utilisateur.prenoms}}

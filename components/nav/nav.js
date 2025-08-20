@@ -80,7 +80,7 @@ Component({
 
     profil(){
         wx.navigateTo({
-          url: '/pages/profil/profil',
+          url: '/pages/a_propos/a_propos',
         })
     },
     

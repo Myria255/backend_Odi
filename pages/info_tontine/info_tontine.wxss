@@ -1,22 +1,11 @@
 /**index.wxss**/
 page {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
   }
   .scrollarea {
-    flex: 1;
-    overflow-y: hidden;
-    height: 100%;
+    max-height: 320rpx; 
+    padding: 10rpx;
   }
-  
-  .conteneur{
-    margin-bottom: 5%;
-    margin-top: 2%;
-    align-items: center;
-  }
-  
-  
   
   .stat{
     font-weight: bold;
@@ -34,21 +23,20 @@ page {
     box-sizing: border-box
   }
   
-  .listParticipant{
+  .listParticipant {
     padding: 2%;
     font-weight: bold;
     border-bottom: 1rpx solid #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
 .listParticipant:last-child {
     border-bottom: none; /* Supprime le trait sous le dernier élément */
 }
   
-  .h1{
-    font-weight: bold;
-    color: rgb(255, 135, 23);
-    font-size: 120%;
-  }
+  
   
   .btnModifier{
     background: rgb(255, 135, 23);
@@ -62,14 +50,9 @@ page {
    
   }
   
-  .nom{
-    width: 70%;
-  }
   
-  .montant{
-    width: 30%; 
-    text-align: end;
-  }
+  
+  
   
   /* Style de l'overlay de la modal */
   .modal-overlay {
@@ -266,4 +249,24 @@ page {
     box-shadow: 0 3rpx 8rpx rgba(255,121,0,0.8);
     text-align: center;
     font-size: 30rpx;
+  }
+  .title{
+    margin-top: 10px ;
+    font-weight: bold;
+    color: #F16E00;
+  }
+  .conteneur {
+    margin: 30rpx 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20rpx;
+  }
+  .index-number {
+    font-size: 28rpx;
+    width: 60rpx;
+  }
+  .left{
+    display: flex;
+    align-items: center;
+    gap: 10rpx; 
   }
